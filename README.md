@@ -27,6 +27,7 @@
 ### 环境要求
 - Python 3.8+
 - 现代浏览器（Chrome、Firefox、Safari、Edge）
+- 科学上网环境（如使用代理或VPN）
 
 ### 安装和使用
 ```bash
@@ -96,6 +97,10 @@ news-summary/
 本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
 
 ## 🙏 致谢
+
+- 感谢 [Trae IDE](https://trae.ai) 提供的强大开发环境
+- 感谢所有开源项目的贡献者
+- 特别感谢 [OpenAI](https://openai.com) 提供的 AI 技术支持
 
 感谢所有为这个项目提供想法和贡献的开发者们！
 
