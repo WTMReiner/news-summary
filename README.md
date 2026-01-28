@@ -45,6 +45,72 @@ python .trae/skills/Reiner-ai-daily/extract_news.py
 open Report/Reiner-AI-信息差-最新日期.html
 ```
 
+## 🧰 CLI 使用
+
+安装一次（在项目根目录）：
+
+```bash
+pip install -r requirements.txt
+python -m pip install -e .
+```
+
+将 HTML 报告解析为 JSON（打印到控制台）：
+
+```bash
+python -m news_summary.cli Report/Reiner-AI-信息差-2026-01-28.html
+```
+
+保存为文件（推荐）：
+
+```bash
+python -m news_summary.cli Report/Reiner-AI-信息差-2026-01-28.html -o script/news-items.json
+```
+
+输出详细日志（调试用）：
+
+```bash
+python -m news_summary.cli Report/Reiner-AI-信息差-2026-01-28.html -o script/news-items.json -v
+```
+
+如果 PATH 已包含 Python 用户脚本目录，也可使用命令：
+
+```bash
+news-summary Report/Reiner-AI-信息差-2026-01-28.html -o script/news-items.json
+```
+
+## 🐳 Docker 使用
+
+构建镜像（在项目根目录）：
+
+```bash
+docker build -t news-summary .
+```
+
+挂载当前目录并在容器中解析 HTML（PowerShell 推荐写法）：
+
+```powershell
+docker run --rm `
+  -v "${PWD}:/app" `
+  news-summary `
+  python -m news_summary.cli Report/Reiner-AI-信息差-2026-01-28.html `
+  -o script/news-items.json
+```
+
+CMD（Windows cmd）示例：
+
+```bat
+docker run --rm -v %CD%:/app news-summary ^
+  python -m news_summary.cli Report/Reiner-AI-信息差-2026-01-28.html ^
+  -o script/news-items.json
+```
+
+只打印 JSON 到终端而不写文件：
+
+```bash
+docker run --rm -v "${PWD}:/app" news-summary \
+  python -m news_summary.cli Report/Reiner-AI-信息差-2026-01-28.html
+```
+
 ## 📁 项目结构
 
 ```
