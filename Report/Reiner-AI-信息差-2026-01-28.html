@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日AI信息差 - 2026年1月28日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .date {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .news-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .news-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+        
+        .news-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .news-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .news-keywords {
+            margin-bottom: 15px;
+        }
+        
+        .keyword {
+            display: inline-block;
+            background: #f0f2f5;
+            color: #667eea;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            margin-bottom: 5px;
+            font-weight: 500;
+            border: 1px solid #e1e5e9;
+        }
+        
+        .news-summary {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .news-source {
+            margin-top: 12px;
+            font-size: 0.9rem;
+        }
+        
+        .news-source a {
+            color: #667eea;
+            text-decoration: none;
+            margin-right: 12px;
+            border-bottom: 1px dotted #667eea;
+        }
+        
+        .news-source a:hover {
+            color: #4c5bd4;
+            border-bottom-color: #4c5bd4;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        .rocket {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .news-card {
+                padding: 20px;
+            }
+            
+            body {
+                padding: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header .date {
+                font-size: 1rem;
+            }
+            
+            .news-title {
+                font-size: 1.2rem;
+            }
+            
+            .news-card {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="rocket">🚀</div>
+            <h1>今日AI信息差</h1>
+            <div class="date">2026年1月28日</div>
+        </div>
+        
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-number">1</div>
+                <div class="news-title">OpenAI推出Prism科研写作平台</div>
+                <div class="news-keywords">
+                    <span class="keyword">#OpenAI</span>
+                    <span class="keyword">#科研写作</span>
+                    <span class="keyword">#LaTeX</span>
+                    <span class="keyword">#协作平台</span>
+                </div>
+                <div class="news-summary">
+                    OpenAI发布Prism，专为科研人员设计的AI原生工作空间，深度集成LaTeX排版和引用管理系统，支持公式编辑、图表制作和文献检索，强调可复现工作流程和团队协作效率，定位科研人群的AI协作平台。
+                </div>
+                <div class="news-source">
+                    来源：
+                    <a href="https://openai.com/prism/" target="_blank" rel="noopener">OpenAI</a>
+                    <a href="https://www.zdnet.com/article/openai-prism-free-science/" target="_blank" rel="noopener">ZDNET</a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-number">2</div>
+                <div class="news-title">Google AI Plus低价订阅扩展至35国</div>
+                <div class="news-keywords">
+                    <span class="keyword">#Google</span>
+                    <span class="keyword">#AIPlus</span>
+                    <span class="keyword">#订阅服务</span>
+                    <span class="keyword">#价格策略</span>
+                </div>
+                <div class="news-summary">
+                    Google将其7.99美元月费的AI Plus订阅服务扩展至35个国家，提供200GB云存储和Gemini 3 Pro等AI能力，主打家庭共享和降低使用门槛，显示Google争取大众化AI服务市场的战略取向。
+                </div>
+                <div class="news-source">
+                    来源：
+                    <a href="https://blog.google/products-and-platforms/products/google-one/google-ai-plus-availability/" target="_blank" rel="noopener">Google 官方博客</a>
+                    <a href="https://www.forbes.com/sites/paulmonckton/2026/01/27/why-googles-new-799-ai-subscription-isnt-the-bargain-it-seems/" target="_blank" rel="noopener">Forbes</a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-number">3</div>
+                <div class="news-title">Nvidia发布Earth-2天气AI模型</div>
+                <div class="news-keywords">
+                    <span class="keyword">#Nvidia</span>
+                    <span class="keyword">#天气预测</span>
+                    <span class="keyword">#Earth2</span>
+                    <span class="keyword">#AI模型</span>
+                </div>
+                <div class="news-summary">
+                    Nvidia推出新一代AI天气模型Earth-2，可实现15天全球天气预报，计算时间减少90%，以色列气象局已采用该模型。新模型在多项指标上优于传统物理模型，显著提升预测速度和准确性。
+                </div>
+                <div class="news-source">
+                    来源：
+                    <a href="https://blogs.nvidia.com/blog/nvidia-earth-2-open-models/" target="_blank" rel="noopener">NVIDIA 官方博客</a>
+                    <a href="https://www.nvidia.com/en-us/case-studies/israel-meteorological-service/" target="_blank" rel="noopener">NVIDIA 客户案例</a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-number">4</div>
+                <div class="news-title">美国交通部使用AI起草监管规则引争议</div>
+                <div class="news-keywords">
+                    <span class="keyword">#美国交通部</span>
+                    <span class="keyword">#AI监管</span>
+                    <span class="keyword">#政策制定</span>
+                    <span class="keyword">#透明度</span>
+                </div>
+                <div class="news-summary">
+                    特朗普政府领导下，美国交通部试验使用Gemini AI辅助起草监管规则，引发关于透明度、质量和问责制的讨论。支持者认为可提升效率，批评者强调必须保持"人类在环"，确保公开方法和风险控制。
+                </div>
+                <div class="news-source">
+                    来源：
+                    <a href="https://www.engadget.com/ai/trump-admin-reportedly-plans-to-use-ai-to-write-federal-regulations-175155111.html" target="_blank" rel="noopener">Engadget</a>
+                    <a href="https://www.carscoops.com/2026/01/dot-rules-written-by-google-ai/" target="_blank" rel="noopener">Carscoops</a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-number">5</div>
+                <div class="news-title">Kimi发布K2.5视觉Agentic模型</div>
+                <div class="news-keywords">
+                    <span class="keyword">#Kimi</span>
+                    <span class="keyword">#多模态AI</span>
+                    <span class="keyword">#Agentic模型</span>
+                    <span class="keyword">#1万亿参数</span>
+                </div>
+                <div class="news-summary">
+                    Kimi发布K2.5视觉Agentic模型，采用1万亿参数MoE架构，支持多模态输入和工具使用，引入代理群体范式实现4.5倍速并行执行。模型在开放场景下展现鲁棒推理能力，长链推理稳定性显著提升。
+                </div>
+                <div class="news-source">
+                    来源：
+                    <a href="https://build.nvidia.com/moonshotai/kimi-k2.5/modelcard" target="_blank" rel="noopener">NVIDIA NIM 模型卡</a>
+                    <a href="https://arxiv.org/abs/2507.20534" target="_blank" rel="noopener">arXiv（Kimi K2 技术报告）</a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <div class="news-number">6</div>
+                <div class="news-title">AI2推出SERA开源编程代理框架</div>
+                <div class="news-keywords">
+                    <span class="keyword">#AI2</span>
+                    <span class="keyword">#SERA</span>
+                    <span class="keyword">#开源</span>
+                    <span class="keyword">#编程代理</span>
+                    <span class="keyword">#低成本训练</span>
+                </div>
+                <div class="news-summary">
+                    Allen Institute for AI发布SERA（Soft-verified Efficient Repository Agents）开源编程代理框架，32B模型在SWE-Bench上解决54.2%问题，训练成本仅400美元，比现有方法便宜100倍，支持私有代码库定制化训练。
+                </div>
+                <div class="news-source">
+                    来源：
+                    <a href="https://allenai.org/blog/open-coding-agents" target="_blank" rel="noopener">Ai2 官方博客</a>
+                    <a href="https://github.com/allenai/sera-cli" target="_blank" rel="noopener">GitHub（SERA CLI）</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>💡 每日AI资讯精选 | 信息差创造价值</p>
+        </div>
+    </div>
+</body>
+</html>
