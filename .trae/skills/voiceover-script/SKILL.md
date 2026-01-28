@@ -36,8 +36,14 @@ description: "根据Reiner AI每日报告HTML生成AI配音脚本。输入参数
 
 ## 输出示例
 
+**[画面：展示Reiner AI每日信息差]**
+
+**（语气：专业， 快速）**
+"OpenAI 推出 Prism 科研工作空间, Google AI Plus低价订阅扩展至35国..."
+
 **[画面：分屏展示OpenAI标志和文档图标]**
 
 **(语气：专业，清晰)**
-"OpenAI 推出 Prism 科研工作空间，Nvidia 推出新 AI 天气模型..."
+"OpenAI 推出 Prism 科研工作空间，
+OpenAI发布Prism，专为科研人员设计的AI原生工作空间，深度集成LaTeX排版和引用管理系统，支持公式编辑、图表制作和文献检索，强调可复现工作流程和团队协作效率，定位科研人群的AI协作平台。..."
 
