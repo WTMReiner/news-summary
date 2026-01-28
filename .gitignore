@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build & Dist
+dist/
+build/
+*.egg-info/
+
+# Reports or generated scripts
+script/*.json
